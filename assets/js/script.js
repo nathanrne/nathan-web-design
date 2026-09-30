@@ -121,6 +121,7 @@
     var currentStep = 1;
 
     function goToStep(n) {
+      if (n < 1 || n > steps.length) return;
       currentStep = n;
       steps.forEach(function (step) {
         step.classList.toggle("is-active", Number(step.getAttribute("data-step")) === n);
