@@ -630,7 +630,7 @@ section{ position: relative; }
 }
 .option-pill:hover{ border-color: var(--text-on-ink-soft); }
 .option-pill:active{ transform: scale(.96); }
-.option-pill.is-selected{ background: var(--dark); border-color: var(--dark); color: var(--cream); }
+.option-pill.is-selected{ background: var(--amber); border-color: var(--amber); color: #fff; }
 
 .option-check{
   display: flex;
@@ -646,7 +646,7 @@ section{ position: relative; }
   transition: border-color .2s var(--ease);
 }
 .option-check:has(input:checked),
-.option-check.is-selected{ background: var(--dark); border-color: var(--dark); color: var(--cream); }
+.option-check.is-selected{ background: var(--amber); border-color: var(--amber); color: #fff; }
 .option-check input{
   position: absolute;
   width: 1px; height: 1px;
