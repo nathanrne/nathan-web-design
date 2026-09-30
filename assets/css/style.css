@@ -172,7 +172,14 @@ section{ position: relative; }
 }
 .brand-group{ display: flex; align-items: center; gap: 14px; }
 .brand{ display: flex; align-items: center; position: relative; }
-.brand img{ height: 76px; width: auto; image-rendering: -webkit-optimize-contrast; }
+
+.brand-logo{ display: flex; flex-direction: column; line-height: 1; }
+.brand-mark{ font-family: 'Quicksand', sans-serif; font-weight: 300; font-size: 42px; letter-spacing: 0.14em; color: var(--text-on-ink); }
+.brand-tag{ font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 11px; letter-spacing: 0.16em; color: var(--text-on-ink-soft); margin-top: 4px; }
+.brand .brand-mark{ font-size: 42px; }
+.footer-brand .brand-mark{ font-size: 22px; }
+.footer-brand .brand-tag{ font-size: 8px; margin-top: 2px; }
+.footer-brand .brand-logo{ margin-bottom: 18px; }
 
 .home-btn{
   width: 44px; height: 44px;
@@ -712,7 +719,6 @@ section{ position: relative; }
   border-bottom: 1px solid var(--line-on-ink);
 }
 @media (min-width: 900px){ .footer-top{ grid-template-columns: 1.3fr 1fr 1fr 1fr; } }
-.footer-brand img{ height: 30px; margin-bottom: 18px; }
 .footer-brand p{ font-size: 14.5px; line-height: 1.6; max-width: 42ch; }
 .footer-col h4{ color: var(--text-on-ink); font-size: 14px; margin-bottom: 18px; text-transform: uppercase; letter-spacing: 0.05em; }
 .footer-col ul{ display: grid; gap: 12px; }
