@@ -621,16 +621,16 @@ section{ position: relative; }
 .option-pill{
   padding: 11px 18px;
   border-radius: 0;
-  border: 1px solid var(--line-on-ink);
-  background: var(--ink-3);
-  color: var(--text-on-ink);
+  border: 1px solid var(--amber);
+  background: var(--amber);
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   transition: border-color .2s var(--ease), background .2s var(--ease), color .2s var(--ease), transform .15s var(--ease);
 }
-.option-pill:hover{ border-color: var(--text-on-ink-soft); }
+.option-pill:hover{ background: #ad631f; border-color: #ad631f; }
 .option-pill:active{ transform: scale(.96); }
-.option-pill.is-selected{ background: var(--amber); border-color: var(--amber); color: #fff; }
+.option-pill.is-selected{ background: #fff; border-color: var(--amber); color: var(--text-on-ink); }
 
 .option-check{
   display: flex;
@@ -638,15 +638,16 @@ section{ position: relative; }
   gap: 9px;
   padding: 11px 16px;
   border-radius: 0;
-  border: 1px solid var(--line-on-ink);
-  background: var(--ink-3);
-  color: var(--text-on-ink);
+  border: 1px solid var(--amber);
+  background: var(--amber);
+  color: #fff;
   font-size: 14px;
   cursor: pointer;
-  transition: border-color .2s var(--ease);
+  transition: border-color .2s var(--ease), background .2s var(--ease), color .2s var(--ease);
 }
+.option-check:hover{ background: #ad631f; border-color: #ad631f; }
 .option-check:has(input:checked),
-.option-check.is-selected{ background: var(--amber); border-color: var(--amber); color: #fff; }
+.option-check.is-selected{ background: #fff; border-color: var(--amber); color: var(--text-on-ink); }
 .option-check input{
   position: absolute;
   width: 1px; height: 1px;
